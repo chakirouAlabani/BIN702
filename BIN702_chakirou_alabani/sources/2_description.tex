@@ -1,0 +1,23 @@
+
+
+\subsubsection{Pairwise Spliced Alignment (PSpA)}
+
+A Pairwise Spliced Alignment (PSpA) refers to the alignment of a Coding Sequence (CDS) with a gene sequence while accounting for the splicing structure. This alignment aims to identify homologous exon sequences and is formulated as a chain of blocks, where each block corresponds to pairwise alignments of segments from both the CDS and gene. 
+
+The significance of PSpA lies in its ability to highlight macroscopic alignments at the splicing level (exon–intron structure) rather than at the nucleotide level, emphasizing differences in splicing trends and exon usage across gene families.
+
+\textbf{Definition:} A PSpA consists of blocks, which are conserved segments where both the CDS and gene are included in the alignment. If a CDS is aligned with a gene in a block, it is termed a \textit{conserved block}. Conversely, if only the CDS is included, it is referred to as a \textit{deleted block}.
+
+\subsubsection{Multiple Spliced Alignment (MSpA)}
+
+An MSpA extends the concept of PSpA to include multiple CDSs and gene sequences, facilitating the identification of homologous exons across a broader set of sequences. 
+
+\textbf{Definition:} An MSpA of a set of CDSs \( C \) and genes \( G \) is represented as a chain of multiblocks \( A = \{A[1], \ldots, A[n]\} \). Each multiblock \( A[i] \) includes a key set \( \text{key}(A[i]) \), which is a subset of \( C \cup G \), mapping each sequence to its respective start and end locations \( (s^x_i, e^x_i) \).
+
+The MSpA must satisfy several conditions:
+\begin{itemize}
+    \item Each multiblock must contain at least one element.
+    \item Segments from the same sequence must not overlap across multiblocks.
+    \item The segments induced by the MSpA must fully cover the original CDSs.
+    \item Segments from aligned genes must be consistent within the same multiblock.
+\end{itemize}

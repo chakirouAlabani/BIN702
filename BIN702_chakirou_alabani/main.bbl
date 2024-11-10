@@ -1,0 +1,71 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen and Manley(2009)]{chen2009mechanisms}
+M.~Chen and J.~L. Manley.
+\newblock Mechanisms of alternative splicing regulation: insights from molecular and genomics approaches.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, 10:\penalty0 741--754, 2009.
+
+\bibitem[Cédric~Notredame(2000)]{t_coffee_alignment}
+Jaap~Heringa Cédric~Notredame, Desmond G.~Higgins.
+\newblock T-coffee: A novel method for fast and accurate multiple sequence alignment.
+\newblock \emph{Journal of Molecular Biology}, 302:\penalty0 205--217, 2000.
+\newblock \doi{10.1006/jmbi.2000.4042}.
+
+\bibitem[Dunne and Kelly(2018)]{dunne2018omgene}
+M.~P. Dunne and S.~Kelly.
+\newblock {OMGene: mutual improvement of gene models through optimisation of evolutionary conservation}.
+\newblock \emph{BMC Genomics}, 19:\penalty0 307, 2018.
+
+\bibitem[Feng and Doolittle(1987)]{feng1987progressive}
+D.-F. Feng and R.~F. Doolittle.
+\newblock Progressive sequence alignment as a prerequisite to correct phylogenetic trees.
+\newblock \emph{Journal of Molecular Evolution}, 25:\penalty0 351--360, 1987.
+
+\bibitem[Harrow et~al.(2006)Harrow, Denoeud, Frankish, et~al.]{harrow2006gencode}
+J.~Harrow, F.~Denoeud, A.~Frankish, et~al.
+\newblock Gencode: producing a reference annotation for encode.
+\newblock \emph{Genome Biology}, 7 Suppl 1:\penalty0 S4.1--S9, 2006.
+
+\bibitem[Jammali et~al.(2019)]{jammali2019splicedfamalign}
+S.~Jammali et~al.
+\newblock Splicedfamalign: Cds-to-gene spliced alignment and identification of transcript orthology groups.
+\newblock \emph{BMC Bioinformatics}, 20:\penalty0 133, 2019.
+
+\bibitem[Jammali et~al.(2022)Jammali, Djossou, Ouédraogo, Nevers, Chegrane, and Ouangraoua]{jammali2022pairwise}
+Safa Jammali, Abigaïl Djossou, Wend-Yam D~D Ouédraogo, Yannis Nevers, Ibrahim Chegrane, and Aïda Ouangraoua.
+\newblock From pairwise to multiple spliced alignment.
+\newblock \emph{Bioinformatics Advances}, 2\penalty0 (1):\penalty0 vbab044, 2022.
+\newblock \doi{10.1093/bioadv/vbab044}.
+
+\bibitem[Kim et~al.(2008)Kim, Goren, and Ast]{kim2008alternative}
+E.~Kim, A.~Goren, and G.~Ast.
+\newblock Alternative splicing: current perspectives.
+\newblock \emph{BioEssays}, 30:\penalty0 38--47, 2008.
+
+\bibitem[Modrek and Lee(2002)]{modrek2002genomic}
+B.~Modrek and C.~Lee.
+\newblock A genomic view of alternative splicing.
+\newblock \emph{Nature Genetics}, 30\penalty0 (1):\penalty0 13--19, Jan 2002.
+\newblock \doi{10.1038/ng0102-13}.
+
+\bibitem[Stanke et~al.(2006)]{stanke2006augustus}
+M.~Stanke et~al.
+\newblock Augustus at egasp: using est, protein and genomic alignments for improved gene prediction in the human genome.
+\newblock \emph{Genome Biology}, 7:\penalty0 S11, 2006.
+
+\bibitem[Tress et~al.(2007)Tress, Martelli, Frankish, et~al.]{tress2007implications}
+M.~L. Tress, P.~L. Martelli, A.~Frankish, et~al.
+\newblock The implications of alternative splicing in the encode protein complement.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United States of America}, 104:\penalty0 5495--5500, 2007.
+
+\bibitem[Wang et~al.(2008)Wang, Sandberg, Luo, Khrebtukova, Zhang, Mayr, Kingsmore, Schroth, and Burge]{wang2008alternative}
+E.~T. Wang, R.~Sandberg, S.~Luo, I.~Khrebtukova, L.~Zhang, C.~Mayr, S.~F. Kingsmore, G.~P. Schroth, and C.~B. Burge.
+\newblock Alternative isoform regulation in human tissue transcriptomes.
+\newblock \emph{Nature}, 456:\penalty0 470--476, 2008.
+
+\end{thebibliography}
