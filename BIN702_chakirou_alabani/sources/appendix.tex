@@ -1,0 +1,303 @@
+% \subsection*{Problem 1}
+%     Our entry data are : 
+%     \begin{itemize}
+%         \item[--] segment matches for pairwise splice alignment for a set of genes and cdss
+%         \item[--] gene\_ids and their cds\_ids
+%     \end{itemize}
+
+%     We currently have the exons positions in the match, we need to find the cds position in the paired aligned gene. Let's take this line as example : 
+    
+%     \noindent\textbf{\texttt{cds0\_ppan	ptro	222	396	618	1230	1452	1.00 }}
+
+%     In this example, the cds\_id : cds0\_ppan, the start position is 396 and the end position 618, those are the position in the cds, we need to find the position in the gene of the cds ( in our case, find the position in the gene of cds0\_ppan). 
+
+% % \subsection*{Algo 1}
+    
+% \begin{algorithm}
+%     \caption{Retrieve the position of the aligned exon in the other gene of the alignment}
+%     \begin{algorithmic}[1]
+%         \STATE \textbf{Input:} 
+%         \STATE \quad $data$: segment matches for pairwise splice alignment for a set of genes and cdss
+%         \STATE \quad $source\_to\_target\_file\_path$: gene\_ids and their cds\_ids
+        
+%         \STATE \textbf{Output:} 
+%         \STATE \quad $processed$: A dictionary with additional exon position information added to the alignment data
+        
+%         \Procedure{FindExonPosInPairedGene}{$data, source\_to\_target\_file\_path$}
+%             \STATE $cds\_gene\_map \gets \text{get\_cds\_gene\_map}(source\_to\_target\_file\_path)$
+%             \STATE $result \gets \{ []\}$
+            
+%             \FOR{\textbf{each} $key, values$ \textbf{in} $data$}
+%                 \FOR{\textbf{each} $match$ \textbf{in} $values$}
+%                     \STATE $cdsId \gets match[0]$
+%                     \STATE $gene_b \gets match[1]$
+%                     \STATE $gene_a \gets cds\_gene\_map[cdsId]$
+%                     \STATE $search\_key \gets \text{concatenate}(cdsId, gene_a)$
+                    
+%                     \IF{$gene_a \neq gene_b$}
+%                         \STATE $result \gets \text{search\_exon\_pos\_in\_pair\_aligned\_gene}(data[search\_key], [match[3], match[4]], \text{line\_length}=10)$
+                        
+%                         \IF{$\text{length}(result) == 1$}
+%                             \STATE \text{append}(result[0][5], result[0][6]) \text{to} match
+%                             \STATE $formatted\_match \gets \text{iteration\_result\_to\_refinement\_entry\_format\_file}(match, cds\_gene\_map)$
+%                             \STATE \text{append}(formatted\_match) \text{to} processed['all']
+%                         \ELSE
+%                             \STATE \text{append}("-", "-") \text{to} match
+%                         \ENDIF
+%                     \ELSE
+%                         \STATE \text{append}("-", "-") \text{to} match
+%                     \ENDIF
+%                 \ENDFOR
+%             \ENDFOR
+        
+%             \STATE \RETURN $processed$
+%         \EndProcedure
+%     \end{algorithmic}
+% \end{algorithm}
+
+% \subsection*{How to find the corresponding position of a cds}
+
+% When a CDS ID matches with its own gene, we know that the positions of the gene on the line correspond to those of the CDS in the gene. Therefore, when we are looking for the position of a CDS within its gene, we simply need to look for that CDS with the corresponding positions in its parent gene and retrieve the gene start and end positions.
+
+
+% \begin{algorithm}
+%     \caption{Search Exon Positions in a Pair of Aligned Genes}
+%     \begin{algorithmic}[1.1]
+%         \STATE \textbf{Input:} 
+%         \STATE \quad $data$: List of lines to search through
+%         \STATE \quad $cds\_segment$: Tuple containing the start and end positions of the exon
+%         \STATE \quad $line\_length$: Minimum length of the line to consider (default is 8)
+        
+%         \STATE \textbf{Output:} 
+%         \STATE \quad $result$: List of lines that match the search criteria based on the exon positions
+        
+%         \Procedure{search\_exon\_pos\_in\_pair\_aligned\_gene}{$data, cds\_segment, line\_length=8$}
+%             \STATE $(cds\_start, cds\_end) \gets cds\_segment$
+%             \STATE $cds\_start \gets \text{int}(cds\_start)$
+%             \STATE $cds\_end \gets \text{int}(cds\_end)$
+%             \STATE $result \gets []$
+            
+%             \FOR{\textbf{each} $line$ \textbf{in} $data$}
+%                 \IF{$( \text{int}(line[3]) == \text{exonStart} \land \text{int}(line[4]) == \text{exonEnd}) $}
+%                     \STATE \text{append} $line$ \text{to} $result$
+%                 \ENDIF
+%             \ENDFOR
+
+        
+%             \STATE \RETURN $result$
+%         \EndProcedure
+%     \end{algorithmic}
+% \end{algorithm}
+    
+% \subsection*{Problem 2 : implement the refinement of segment matches}
+
+% The algorithm we are implementing is described in a paper titled \href{https://academic.oup.com/bioinformatics/article/24/16/i187/200409}{Segment-based multiple sequence alignment} in section 2.2.
+
+% As entry data, we have : 
+%     \begin{itemize}
+%         \item[--] a set of non-repeating segment matches
+%         % \item[--] 
+%     \end{itemize}
+
+
+% The segment match refinement algorithm computes a minimal subdivision of the segments, i.e. it refines the segment matches such that all parts of all segment matches can be used.
+
+
+% \begin{algorithm}
+% \caption{mult\_seg\_match\_refinement}
+%     \begin{algorithmic}[2.1]
+%         \REQUIRE file\_path: string
+%         \ENSURE refined multi-segment matches
+%         % \IF{file\_path is empty}
+%         %     \PRINT{Error: File path cannot be empty}
+%         %     \RETURN
+%         % \ENDIF
+%         % \STATE output $\gets$ \texttt{get\_output\_folder(OUTPUT\_FOLDER)} + \texttt{get\_family(file\_path).replace('\_extended\_', '')} + "\_output.txt"
+%         % \STATE original\_data $\gets$ \texttt{file\_to\_list(file\_path)}
+%         \STATE segment\_matches $\gets$ \texttt{original\_data[2:]}
+%         \STATE Vi $\gets$ \texttt{build\_Vi(segment\_matches)}
+%         \STATE \texttt{del\_duplicates\_sort\_Vi(Vi)}
+%         \STATE \texttt{visualize\_Vi(Vi, output)}
+%         \STATE Ti $\gets$ \texttt{build\_Ti(segment\_matches)}
+%         \FORALL{match in segment\_matches}
+%             % \IF{match is empty}
+%             %     \CONTINUE
+%             % \ENDIF
+%             \STATE boundaries $\gets$ \texttt{get\_match\_boundaries(match)}
+%             \FORALL{w in boundaries}
+%                 \STATE gene1 $\gets$ \texttt{gene\_of\_boundary(index, match)}
+%                 \STATE Vi $\gets$ \texttt{refine(w, Ti, Vi, gene1)}
+%             \ENDFOR
+%         \ENDFOR
+%         \STATE \texttt{del\_duplicates\_sort\_Vi(Vi)}
+%         \STATE \texttt{visualize\_Vi(Vi, output, True)}
+%         \PRINT{Refinement output path : \texttt{output}}
+%         \RETURN Vi
+%     \end{algorithmic}
+% \end{algorithm}
+
+% % \begin{algorithm}
+% %     \caption{refine}
+% %     \begin{algorithmic}[2.2]
+% %         \REQUIRE w: int, Ti: dict, Vi: dict, gene1: dict
+% %         \ENSURE refined Vi
+% %         \STATE overlaps $\gets$ \texttt{get\_overlaps(Ti, w, gene1["gene\_id"])}
+% %         \FORALL{lq in overlaps}
+% %             \STATE h $\gets$ lq.begin + (w - gene1["u"])
+% %             \IF{lq.begin $<$ h $<$ lq.end}
+% %                 \STATE gene2\_id $\gets$ lq.data
+% %                 \STATE gene2 $\gets$ \{ "gene\_id": gene2\_id, "u": lq.begin, "v": h \}
+% %                 \IF{h not in Vi[gene2\_id]}
+% %                     \STATE Vi[gene2\_id].append(h)
+% %                     \STATE Vi $\gets$ \texttt{refine(h, Ti, Vi, gene2)}
+% %                 \ENDIF
+% %             \ENDIF
+% %         \ENDFOR
+% %         \RETURN Vi
+% %     \end{algorithmic}
+% % \end{algorithm}
+
+% \begin{algorithm}
+%     \caption{refine}
+%     \begin{algorithmic}[1]
+%         \REQUIRE $w$, $Ti$, $Vi$, $gene1$
+%         \ENSURE Refined $Vi$
+%         \STATE $stack \gets [(w, gene1)]$
+%         \WHILE{$stack \neq []$}
+%             \STATE $(current\_w, current\_gene1) \gets stack.pop()$
+%             \STATE $overlaps \gets get\_overlaps(Ti, current\_w, current\_gene1)$
+%             \FORALL{$lq \in overlaps$}
+%                 \IF{$lq[0].data == current\_gene1[\text{"gene\_id"}]$}
+%                     \STATE $(u, v, u\_v\_gene) \gets (lq[0].begin, lq[0].end, lq[0].data)$
+%                     \STATE $(x, y, x\_y\_gene) \gets (lq[1].begin, lq[1].end, lq[1].data)$
+%                 \ELSE
+%                     \STATE $(u, v, u\_v\_gene) \gets (lq[1].begin, lq[1].end, lq[1].data)$
+%                     \STATE $(x, y, x\_y\_gene) \gets (lq[0].begin, lq[0].end, lq[0].data)$
+%                 \ENDIF
+%                 \STATE $h \gets x + (current\_w - u)$
+%                 \STATE $gene2\_id \gets x\_y\_gene$
+%                 \STATE $consider\_h \gets x < h < y$
+%                 \STATE $gene2 \gets \{ \text{"gene\_id"}: gene2\_id, \text{"u"}: u, \text{"v"}: h \}$
+%                 \IF{$consider\_h$}
+%                     \IF{$gene2\_id \notin Vi$}
+%                         \STATE $Vi[gene2\_id] \gets []$
+%                     \ENDIF
+%                     \IF{$h \notin Vi[gene2\_id]$}
+%                         \STATE $Vi[gene2\_id].append(h)$
+%                         \STATE $stack.append((h, gene2))$
+%                     \ENDIF
+%                 \ENDIF
+%             \ENDFOR
+%         \ENDWHILE
+%         \STATE \RETURN $Vi$
+%     \end{algorithmic}
+% \end{algorithm}
+
+
+% \newpage
+% \subsection*{Problem 3 : alignment graph}
+
+% The algorithm we are implementing is described in the same paper in section 2.1. The purpose of this algo is to construct an alignment graph from refined segment matches for genes. 
+
+% \subsection*{Overall steps of the algorithm}
+% \begin{enumerate}
+%     \item Build vertices from the refined segments for each gene. A vertex is a tuple size 3:
+%     \begin{enumerate}
+%         \item[0] gene id
+%         \item[1] start position
+%         \item[2] length
+%     \end{enumerate}
+%     \item Build edges from vertices.
+%     \begin{enumerate}
+%         \item An edge exists if there is a match between the 2 vertices.
+%         \begin{itemize}
+%             \item $\diamond$ start\_i == start\_j
+%             \item $\diamond$ length\_i == length\_j
+%         \end{itemize}
+%         \item The weight of the edge is found using the percent identity (PI) of the match represented by the edge. The triplet approach is the way:
+%         \begin{enumerate}
+%             \item Compute edge percent identity.
+%             \item Calculate the weight (triplet approach).
+%         \end{enumerate}
+%     \end{enumerate}
+%     \item Generate the graph using the edges.
+%     \begin{itemize}
+%         \item The edge structure (tuple):
+%         \begin{enumerate}
+%             \item[0] Vertex origin
+%             \item[1] Vertex target
+%             \item[2] Weight
+%         \end{enumerate}
+%     \end{itemize}
+% \end{enumerate}
+
+% \begin{algorithm}
+%     \caption{build\_alignment\_graph}
+%     \begin{algorithmic}[3.1]
+%         \REQUIRE Refined segment matches for genes
+%         \ENSURE Alignment graph
+%         \STATE $vertices \gets build\_vertices(V_i)$
+%         \STATE $edges \gets build\_edges(vertices)$
+%         \FORALL{vertex \textbf{in} $vertices$}
+%             \STATE Get weighted edges using vertices
+%             \STATE Get trace from weighted edges
+%         \ENDFOR
+%         \STATE $build\_graph$
+%     \end{algorithmic}
+% \end{algorithm}
+
+% \begin{algorithm}
+%     \caption{build\_vertices}
+%     \begin{algorithmic}[1]
+%         \REQUIRE $Vi$ 
+%         \ENSURE $vertices$
+%         \STATE $vertices \gets []$
+%         \FORALL{$(gene\_id, boundaries) \in Vi$}
+%             \FOR{$index \gets 0$ \textbf{to} $len(boundaries) - 2$}
+%                 \STATE $boundary \gets boundaries[index]$
+%                 \STATE $next\_boundary \gets boundaries[index + 1]$
+%                 \STATE $start\_boundary \gets \text{int}(boundary)$
+%                 \STATE $segment\_length \gets \text{int}(next\_boundary) - start\_boundary$
+%                 \STATE $vertex \gets (gene\_id, start\_boundary, segment\_length)$
+%                 \STATE $vertices.append(vertex)$
+%             \ENDFOR
+%         \ENDFOR
+%         \STATE \RETURN $vertices$
+%     \end{algorithmic}
+% \end{algorithm}
+        
+% \begin{algorithm}
+%     \caption{build\_edges}
+%     \begin{algorithmic}[3.2]
+%         \REQUIRE $vertices$, $target\_data$
+%         \ENSURE $edges$
+%         \STATE $edges \gets []$
+%         \STATE $weightless\_edges \gets []$
+%         \FOR{$i \gets 0$ \textbf{to} $len(vertices) - 1$}
+%             \STATE $vertex\_i \gets vertices[i]$
+%             \STATE $vertex\_matches \gets get\_vertex\_matches(vertex\_i, vertices)$
+%             \FORALL{$vertex\_j \in vertex\_matches$}
+%                 \STATE $percent\_identity \gets compute\_percent\_identity(vertex\_i, vertex\_j, target\_data)$
+%                 \STATE $weightless\_edges.append((vertex\_i, vertex\_j, percent\_identity))$
+%             \ENDFOR
+%         \ENDFOR
+        
+%         \FORALL{$weightless\_edge \in weightless\_edges$}
+%             \STATE $(origin\_vertex, target\_vertex, percent\_identity) \gets weightless\_edge$
+%             \STATE $origin\_matches \gets get\_vertex\_matches(origin\_vertex, vertices)$
+%             \STATE $to\_sum \gets []$
+%             \FORALL{$match \in origin\_matches$}
+%                 \STATE $(gene\_id, start\_pos, length) \gets match$
+%                 \IF{$gene\_id \neq target\_vertex[0]$}
+%                     \STATE $triplet\_1\_pi \gets search\_edge(weightless\_edges, origin\_vertex, match)[2]$
+%                     \STATE $triplet\_2\_pi \gets search\_edge(weightless\_edges, match, target\_vertex)[2]$
+%                     \STATE $pi \gets \min(triplet\_1\_pi, triplet\_2\_pi)$
+%                     \STATE $to\_sum.append(pi)$
+%                 \ENDIF
+%             \ENDFOR
+%             \STATE $edge\_weight \gets \text{round}(percent\_identity + \text{sum}(to\_sum), 2)$
+%             \STATE $edges.append((origin\_vertex, target\_vertex, edge\_weight))$
+%         \ENDFOR
+%         \STATE \RETURN $edges$
+%     \end{algorithmic}
+% \end{algorithm}

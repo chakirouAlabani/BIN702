@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.7.5)  10 NOV 2024 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.7.5)  10 NOV 2024 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,35 +527,87 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip108
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count318
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen257
+\ar@mcellbox=\box62
+\extrarowheight=\dimen258
+\NC@list=\toks34
+\extratabsurround=\skip109
+\backup@length=\skip110
+\ar@cellbox=\box63
+)
+\TX@col@width=\dimen259
+\TX@old@table=\dimen260
+\TX@old@col=\dimen261
+\TX@target=\dimen262
+\TX@delta=\dimen263
+\TX@cols=\count319
+\TX@ftn=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count320
+\calc@Bcount=\count321
+\calc@Adimen=\dimen264
+\calc@Bdimen=\dimen265
+\calc@Askip=\skip111
+\calc@Bskip=\skip112
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count322
+\calc@Cskip=\skip113
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen266
+\ESO@tempdimb=\dimen267
+)
+\AM@pagewidth=\dimen268
+\AM@pageheight=\dimen269
+\AM@fboxrule=\dimen270
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count323
+\AM@pagebox=\box64
+\AM@global@opts=\toks36
+\AM@pagecnt=\count324
+\AM@toc@title=\toks37
+\AM@lof@heading=\toks38
+\c@AM@survey=\count325
+\AM@templatesizebox=\box65
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-\c@stepsi=\count319
-\enitdp@steps=\count320
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 78.
+\c@stepsi=\count326
+\enitdp@steps=\count327
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 93.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -591,27 +643,27 @@ LaTeX Font Info:    ... okay on input line 78.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count321
+\c@lstlisting=\count328
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen257
-\scratchbox=\box62
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen258
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count329
+\scratchdimen=\dimen271
+\scratchbox=\box66
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen272
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 93.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -620,8 +672,13 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./sources/0_frontpage.tex
-<figures/udeslog.png, id=61, 1284.8pt x 205.76875pt>
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (./sources/0_frontpage.tex
+<figures/udeslog.png, id=69, 1284.8pt x 205.76875pt>
 File: figures/udeslog.png Graphic file (type png)
 <use figures/udeslog.png>
 Package pdftex.def Info: figures/udeslog.png  used on input line 6.
@@ -632,18 +689,18 @@ Package pdftex.def Info: figures/udeslog.png  used on input line 6.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-<figures/241208906_10159878130857049_3729368319539169165_n.png, id=86, 1204.5pt x 1204.5pt>
+<figures/241208906_10159878130857049_3729368319539169165_n.png, id=96, 1204.5pt x 1204.5pt>
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 91.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 106.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \newpage
-              [1 <./figures/241208906_10159878130857049_3729368319539169165_n.png (PNG copy)>] (./sources/1_description.tex
-<figures/overview_spFam_methods.png, id=111, 870.25125pt x 1040.88875pt>
+l.106 \newpage
+               [1 <./figures/241208906_10159878130857049_3729368319539169165_n.png (PNG copy)>] (./sources/1_description.tex
+<figures/overview_spFam_methods.png, id=121, 870.25125pt x 1040.88875pt>
 File: figures/overview_spFam_methods.png Graphic file (type png)
 <use figures/overview_spFam_methods.png>
 Package pdftex.def Info: figures/overview_spFam_methods.png  used on input line 42.
@@ -651,81 +708,302 @@ Package pdftex.def Info: figures/overview_spFam_methods.png  used on input line 
 )
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 98.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 113.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
  [1]
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 113.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 128.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
  [2 <./figures/overview_spFam_methods.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 115.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 149.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 164.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
  [3]
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 194.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 209.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
  [4]
-File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
-<use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 225.
-(pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
- [5] (./main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--251
+
+ []
 
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 232.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 251.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
+[5]
+Underfull \hbox (badness 2205) in paragraph at lines 280--280
+[]|\T1/ptm/m/n/12 No. of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+\T1/ptm/m/n/12 to-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+\T1/ptm/m/n/12 CDS
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 280--280
+[]|\T1/ptm/m/n/12 No. of
+ []
+
+File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
+<use figures/241208906_10159878130857049_3729368319539169165_n.png>
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 296.
+(pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
+
+ []
+
+File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
+<use figures/241208906_10159878130857049_3729368319539169165_n.png>
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 343.
+(pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
+[7]
+File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
+<use figures/241208906_10159878130857049_3729368319539169165_n.png>
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 360.
+(pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
+ [8] (./main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
  [1] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.373 \newpage
+               [2] (./main.bbl
+
+LaTeX Warning: Reference `endOfDoc' on page  undefined on input line 86.
+
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 237.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 86.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
- [2] (./main.bbl)
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 ...dame, Higgins, and Heringa]{notredame2000}
+                                                   [1])
+
+LaTeX Warning: Reference `endOfDoc' on page  undefined on input line 381.
+
 File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
 <use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 243.
+Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 381.
 (pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
- [3]
-File: figures/241208906_10159878130857049_3729368319539169165_n.png Graphic file (type png)
-<use figures/241208906_10159878130857049_3729368319539169165_n.png>
-Package pdftex.def Info: figures/241208906_10159878130857049_3729368319539169165_n.png  used on input line 247.
-(pdftex.def)             Requested size: 19.90463pt x 19.91684pt.
- [4] 
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.381 \newpage
+               [2]
+<sources/appendix2a.pdf, id=252, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf>
+Package pdftex.def Info: sources/appendix2a.pdf  used on input line 382.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf>
+Package pdftex.def Info: sources/appendix2a.pdf  used on input line 382.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<sources/appendix2a.pdf, id=255, page=1, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 1>
+Package pdftex.def Info: sources/appendix2a.pdf , page1 used on input line 382.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 1>
+Package pdftex.def Info: sources/appendix2a.pdf , page1 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 1>
+Package pdftex.def Info: sources/appendix2a.pdf , page1 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 1>
+Package pdftex.def Info: sources/appendix2a.pdf , page1 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 1>
+Package pdftex.def Info: sources/appendix2a.pdf , page1 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=285, page=2, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 2>
+Package pdftex.def Info: sources/appendix2a.pdf , page2 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 2>
+Package pdftex.def Info: sources/appendix2a.pdf , page2 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 2>
+Package pdftex.def Info: sources/appendix2a.pdf , page2 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [4 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=313, page=3, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 3>
+Package pdftex.def Info: sources/appendix2a.pdf , page3 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 3>
+Package pdftex.def Info: sources/appendix2a.pdf , page3 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 3>
+Package pdftex.def Info: sources/appendix2a.pdf , page3 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [5 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=323, page=4, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 4>
+Package pdftex.def Info: sources/appendix2a.pdf , page4 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 4>
+Package pdftex.def Info: sources/appendix2a.pdf , page4 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 4>
+Package pdftex.def Info: sources/appendix2a.pdf , page4 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [6 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=327, page=5, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 5>
+Package pdftex.def Info: sources/appendix2a.pdf , page5 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 5>
+Package pdftex.def Info: sources/appendix2a.pdf , page5 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 5>
+Package pdftex.def Info: sources/appendix2a.pdf , page5 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [7 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=338, page=6, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 6>
+Package pdftex.def Info: sources/appendix2a.pdf , page6 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 6>
+Package pdftex.def Info: sources/appendix2a.pdf , page6 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 6>
+Package pdftex.def Info: sources/appendix2a.pdf , page6 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [8 <./sources/appendix2a.pdf>]
+<sources/appendix2a.pdf, id=342, page=7, 614.295pt x 794.97pt>
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 7>
+Package pdftex.def Info: sources/appendix2a.pdf , page7 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 7>
+Package pdftex.def Info: sources/appendix2a.pdf , page7 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \includepdf[pages=-]{sources/appendix2a.pdf}
+                                                  
+File: sources/appendix2a.pdf Graphic file (type pdf)
+<use sources/appendix2a.pdf, page 7>
+Package pdftex.def Info: sources/appendix2a.pdf , page7 used on input line 382.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [9 <./sources/appendix2a.pdf>] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E548A1C67074567ED6899CAB6931B874;2606.
+(rerunfilecheck)             Checksum: 129A0F929728CF93659B7E07F94610BA;2962.
  ) 
 Here is how much of TeX's memory you used:
- 20392 strings out of 477619
- 351565 string characters out of 5829987
- 1864759 words of memory out of 5000000
- 40524 multiletter control sequences out of 15000+600000
- 553714 words of font info for 70 fonts, out of 8000000 for 9000
+ 21376 strings out of 477619
+ 369134 string characters out of 5829987
+ 1876759 words of memory out of 5000000
+ 41467 multiletter control sequences out of 15000+600000
+ 556482 words of font info for 72 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 110i,15n,118p,578b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (11 pages, 327147 bytes).
+ 110i,17n,118p,578b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (21 pages, 470897 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

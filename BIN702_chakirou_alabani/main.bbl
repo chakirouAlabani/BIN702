@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,6 +21,12 @@ M.~P. Dunne and S.~Kelly.
 \newblock {OMGene: mutual improvement of gene models through optimisation of evolutionary conservation}.
 \newblock \emph{BMC Genomics}, 19:\penalty0 307, 2018.
 
+\bibitem[Edgar(2004)]{edgar2004}
+R.C. Edgar.
+\newblock Muscle: multiple sequence alignment with high accuracy and high throughput.
+\newblock \emph{Nucleic Acids Research}, 32\penalty0 (5):\penalty0 1792--1797, 2004.
+\newblock \doi{10.1093/nar/gkh340}.
+
 \bibitem[Feng and Doolittle(1987)]{feng1987progressive}
 D.-F. Feng and R.~F. Doolittle.
 \newblock Progressive sequence alignment as a prerequisite to correct phylogenetic trees.
@@ -42,16 +48,58 @@ Safa Jammali, Abigaïl Djossou, Wend-Yam D~D Ouédraogo, Yannis Nevers, Ibrahim 
 \newblock \emph{Bioinformatics Advances}, 2\penalty0 (1):\penalty0 vbab044, 2022.
 \newblock \doi{10.1093/bioadv/vbab044}.
 
+\bibitem[Katoh and Standley(2013)]{katoh2013}
+K.~Katoh and D.M. Standley.
+\newblock Mafft multiple sequence alignment software version 7: improvements in performance and usability.
+\newblock \emph{Molecular Biology and Evolution}, 30\penalty0 (4):\penalty0 772--780, 2013.
+\newblock \doi{10.1093/molbev/mst010}.
+
 \bibitem[Kim et~al.(2008)Kim, Goren, and Ast]{kim2008alternative}
 E.~Kim, A.~Goren, and G.~Ast.
 \newblock Alternative splicing: current perspectives.
 \newblock \emph{BioEssays}, 30:\penalty0 38--47, 2008.
+
+\bibitem[L\"{o}ytynoja and Goldman(2005)]{loytynoja2005}
+A.~L\"{o}ytynoja and N.~Goldman.
+\newblock An algorithm for progressive multiple alignment of sequences with insertions.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United States of America}, 102\penalty0 (30):\penalty0 10557--10562, 2005.
+\newblock \doi{10.1073/pnas.0409137102}.
+
+\bibitem[L\"{o}ytynoja and Goldman(2008)]{loytynoja2008}
+A.~L\"{o}ytynoja and N.~Goldman.
+\newblock Phylogeny-aware gap placement prevents errors in sequence alignment and evolutionary analysis.
+\newblock \emph{Science}, 320\penalty0 (5883):\penalty0 1632--1635, 2008.
+\newblock \doi{10.1126/science.1158395}.
 
 \bibitem[Modrek and Lee(2002)]{modrek2002genomic}
 B.~Modrek and C.~Lee.
 \newblock A genomic view of alternative splicing.
 \newblock \emph{Nature Genetics}, 30\penalty0 (1):\penalty0 13--19, Jan 2002.
 \newblock \doi{10.1038/ng0102-13}.
+
+\bibitem[Nord et~al.(2018)Nord, DeMarche, McCullough, and Zanini]{nord2018}
+A.L. Nord, M.L. DeMarche, C.M. McCullough, and F.~Zanini.
+\newblock Mirage: a fast and flexible aligner for alternatively spliced protein isoforms.
+\newblock \emph{Bioinformatics}, 34\penalty0 (15):\penalty0 2667--2669, 2018.
+\newblock \doi{10.1093/bioinformatics/bty151}.
+
+\bibitem[Notredame et~al.(2000)Notredame, Higgins, and Heringa]{notredame2000}
+C.~Notredame, D.G. Higgins, and J.~Heringa.
+\newblock T-coffee: A novel method for fast and accurate multiple sequence alignment.
+\newblock \emph{Journal of Molecular Biology}, 302\penalty0 (1):\penalty0 205--217, 2000.
+\newblock \doi{10.1006/jmbi.2000.4042}.
+
+\bibitem[Ranwez et~al.(2018)Ranwez, Douzery, Cambon, Chantret, and Delsuc]{ranwez2018}
+V.~Ranwez, E.~Douzery, C.~Cambon, N.~Chantret, and F.~Delsuc.
+\newblock Macse v2: toolkit for the alignment of coding sequences accounting for frameshifts and stop codons.
+\newblock \emph{Molecular Biology and Evolution}, 35\penalty0 (10):\penalty0 2582--2584, 2018.
+\newblock \doi{10.1093/molbev/msy159}.
+
+\bibitem[Sievers et~al.(2011)Sievers, Wilm, Dineen, Gibson, Karplus, Li, Lopez, McWilliam, Remmert, Soding, Thompson, and Higgins]{sievers2011}
+F.~Sievers, A.~Wilm, D.G. Dineen, T.J. Gibson, K.~Karplus, W.~Li, R.~Lopez, H.~McWilliam, M.~Remmert, J.~Soding, J.D. Thompson, and D.G. Higgins.
+\newblock Fast, scalable generation of high-quality protein multiple sequence alignments using clustal omega.
+\newblock \emph{Molecular Systems Biology}, 7:\penalty0 539, 2011.
+\newblock \doi{10.1038/msb.2011.75}.
 
 \bibitem[Stanke et~al.(2006)]{stanke2006augustus}
 M.~Stanke et~al.
@@ -67,5 +115,10 @@ M.~L. Tress, P.~L. Martelli, A.~Frankish, et~al.
 E.~T. Wang, R.~Sandberg, S.~Luo, I.~Khrebtukova, L.~Zhang, C.~Mayr, S.~F. Kingsmore, G.~P. Schroth, and C.~B. Burge.
 \newblock Alternative isoform regulation in human tissue transcriptomes.
 \newblock \emph{Nature}, 456:\penalty0 470--476, 2008.
+
+\bibitem[Zerbino et~al.(2018)]{zerbino2018ensembl}
+D.~R. Zerbino et~al.
+\newblock Ensembl 2018.
+\newblock \emph{Nucleic Acids Research}, 46:\penalty0 D754--D761, 2018.
 
 \end{thebibliography}

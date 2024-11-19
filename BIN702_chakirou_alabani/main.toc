@@ -10,7 +10,9 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Computation of pairwise scores}{4}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}MSpA Computation}{5}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Experimental setup}{5}{subsection.2.3}%
-\contentsline {section}{List of Figures}{I}{subsection.2.3}%
-\contentsline {section}{List of Tables}{II}{subsection.2.3}%
-\contentsline {section}{References}{III}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Appendix}{IV}{section.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Dataset}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Evaluated methods}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Performance metrics}{8}{subsubsection.2.3.3}%
+\contentsline {section}{List of Figures}{}{subsubsection.2.3.3}%
+\contentsline {section}{List of Tables}{}{subsubsection.2.3.3}%
+\contentsline {section}{References}{}{subsubsection.2.3.3}%
